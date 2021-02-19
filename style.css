@@ -1,0 +1,182 @@
+*, body, html {  
+	margin: 0;
+	padding: 0;
+	font: 1em "Open Sans", sans-serif;
+}
+body {
+	background-color: #d1ccc0;
+}
+/*---------------------*/
+.menu{
+	position: fixed;
+	left: 0;
+	top: 0;
+	border-top: 0;
+	z-index: 100;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,1e3799+100 */
+background: rgb(44,83,158); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(44,83,158,1) 0%, rgba(30,55,153,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(44,83,158,1) 0%,rgba(30,55,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(44,83,158,1) 0%,rgba(30,55,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#1e3799',GradientType=1 ); /* IE6-9 */
+     
+    box-shadow: 1px 5px 1px #82ccdd;
+	width: 100%;
+	background-color: #40407a;
+	color: #fff;
+	height: 60px;
+
+}
+
+.menu #logo{
+	float: left;
+	height: 30px;
+	padding: 15px 30px;
+	font-size: 1.2em;
+	line-height: 30px;
+
+}
+
+.menu > ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+
+}
+
+.menu > ul > li{
+	float: left;
+}
+.menu-item{
+	display: inline-block;
+	padding: 15px 20px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #f7f1e3;
+
+}
+
+.menu-item:hover {
+	background-color: #34ace0;
+	color: #2c2c54;
+}
+
+/*----------------------------------------*/
+ul#subx-menu{
+	position: absolute;
+	top: 89px;
+	right: 115px;
+	background: #1e3799;
+	overflow: hidden;
+	max-width: 0;
+}
+
+.sub-drop ul li:hover > ul#subx-menu {
+	max-width: 400px;
+	transition: max-width 0.5s ease-in;
+}
+
+/*---------------------------------------------------*/
+.sub-drop > ul{
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+.menu ul li:hover .sub-drop
+> ul {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s,opacity 0.3s ease-in; 
+ 	
+ }
+/*---------------------------------------------------*/
+.sub-content{
+	position: absolute;
+	top: 60px;
+    overflow: hidden;
+    background-color: #1e3799;
+    max-height: 0;
+
+}
+
+.sub-content a {
+	color: #f7f1e3;
+	text-decoration: none;
+
+}
+.sub-drop{
+	padding: 0;
+}
+
+.sub-drop ul{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;;
+}
+
+.sub-drop ul li a{
+	display: inline-block;
+	padding: 10px 20px;
+
+}
+.sub-drop a:hover{
+	background-color: #34ace0;
+	color: #2c2c54;
+	width: 70%;
+}
+ /*----------------------------------------------*/
+
+ .menu.item:focus {
+ 	background-color: #706fd3;
+
+ }
+
+ .menu ul li:hover .sub-content{
+ 	max-height: 400px;
+ 	overflow: visible;
+ 	transition: max-height 0.5s ease-in;
+ 	-webkit-transition: max-height 0.5s ease-in;
+ 	-moz-transition: max-height 0.5s ease-in;
+ }
+
+
+ #rmenu{
+ 	float: right;
+
+ }
+
+ /*----------------------------------------------*/
+ .sometext{
+ 	padding-top: 30px;
+ 	font-size: 2em;
+ 	text-align: center;
+ 	font-weight: bold;
+
+ }
+ .sometext span {
+ 	font-weight: thick;
+ 	color: #e55039;
+ }
+
+ #alltext{
+ 	margin-top: 70px;
+ }
+
+ .jpg1{
+ 	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+ }
+
+ .txt1{
+ 	padding-top: 30px;
+ 	width: 500px;
+ 	margin: auto;
+ 	text-align: center;
+ }
